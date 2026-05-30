@@ -164,9 +164,6 @@ def update_record(
 def main():
     config = load_config()
 
-    records = config["records"]
-    proxied = config["settings"]["proxied"]
-
     current_ip = get_public_ip()
     cached_ip = get_cached_ip()
 
