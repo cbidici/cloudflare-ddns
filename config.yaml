@@ -1,0 +1,12 @@
+records:
+  - name: vpn.doe.com
+    proxied: false
+    ttl: 300
+
+  - name: home.doe.com
+    proxied: true
+    ttl: 1
+
+  - name: john.com
+    proxied: true
+    ttl: 1

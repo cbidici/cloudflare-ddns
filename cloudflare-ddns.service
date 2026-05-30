@@ -1,0 +1,14 @@
+[Unit]
+Description=Cloudflare DDNS Updater
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+
+EnvironmentFile=/etc/cloudflare-ddns/cloudflare-ddns.env
+
+ExecStart=/usr/bin/python3 /opt/cloudflare-ddns/cloudflare-ddns.py
+
+User=root
+Group=root
